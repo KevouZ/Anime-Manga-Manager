@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <title>Anime & Manga Manager</title>
+</head>
+<body>
+    <nav class="layout-nav">
+        <ul class="nav-list">
+            <li><a href="add-serie.html" class="list-item">Add Anime/Manga</a></li>
+            <li><a href="mangas.html" class="list-item">Mangas</a></li>
+            <li><a href="animes.html" class="list-item">Animes</a></li>
+        </ul>
+    </nav>
+
+    <main class="layout-content">
+        <h2 class="content-subtitle">Add your anime or manga here</h2>
+
+        <form action="" class="content-form">
+            <div class="form-group">
+                <label for="nameInput" class="inputLabel">Name of the anime/manga:</label><br>
+                <input type="text" id="nameInput" placeholder="Enter the name of the serie." name="nameInput" class="input"><br><br>
+            </div>
+
+            <div class="form-group">
+                <p> Add as pending or completed? </p>
+                <p> <input type="radio" name="statusInput" id="statusPending" value="pending" checked> Pending </p>
+                <p> <input type="radio" name="statusInput" id="statusCompleted" value="completed"> Completed </p>
+            </div>
+
+            <div class="form-group">
+                <label for="genreInput" class="inputLabel">Main genre of the series:</label><br>
+            <select name="genreInput" id="genreInput" class="input">
+                <option value="Shonen">Shonen</option>
+                <option value="Shojo">Shojo</option>
+                <option value="Seinen">Seinen</option>
+                <option value="Isekai">Isekai</option>
+                <option value="Other">Other</option>      
+            </select><br><br>
+            </div>
+
+            <button type="button" id="addManga" class="btn-submit">Add Manga</button>
+            <button type="button" id="addAnime" class="btn-submit">Add Anime</button>
+        </form>
+    </main>
+</body>
+</html>
