@@ -1,9 +1,82 @@
-.manga{
-    border: 3px dashed blueviolet;
-    margin: 0 auto;
+/* GENERAL STYLES */
+:root{
+    --body-bg-color: #0a0a23;
+    --text-color: white;
+    --border-color: #158582;
+    --hover-color: #6c87ff;
 }
 
-.anime{
-    border: 3px dashed blueviolet;
-    margin: 0 auto;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* NAV STYLES */
+.layout-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 17%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-bg-color);
+    padding: 1rem 0;
+    border-right: 1px solid var(--border-color);
+}
+
+.nav-list{
+    width: 100%;
+}
+
+.nav-list li{
+    width: 100%;
+}
+
+.nav-list li a{
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.nav-list li:first-child a {
+    margin-top: -1rem; 
+    padding-top: 1rem; 
+    padding-bottom: 1rem;
+    border-top: 1px solid var(--border-color); 
+}
+
+.nav-list li:not(:first-child) a {
+    padding: 1rem; 
+}
+
+
+.nav-list li a:hover{
+    background-color: var(--hover-color);
+    transition: all 500ms linear;
+}
+
+
+
+
+
