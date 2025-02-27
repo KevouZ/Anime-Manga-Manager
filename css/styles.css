@@ -4,6 +4,7 @@
     --text-color: white;
     --border-color: #158582;
     --hover-color: #6c87ff;
+    --title-color: #5becc0;
 }
 
 *{
@@ -75,7 +76,69 @@ ul{
     background-color: var(--hover-color);
     transition: all 500ms linear;
 }
+/*===============================================================================*/
+/*CONTENT STYLES*/
+body{
+    display: flex;
+    margin-left: 11.7rem;
+}
 
+.layout-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.content-title{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.content-text{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.content-list{
+    display: block;
+    width: 90%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    list-style: inside;
+}
+
+.content-text:last-of-type{
+    margin-bottom: 2rem;
+}
+
+#btn-start{
+    display: flex;
+    width: 10rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--border-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 700ms linear;
+}
+
+#btn-start:hover{
+    background-color: var(--hover-color);
+}
+/*===============================================================================*/
+/**/
 
 
 
